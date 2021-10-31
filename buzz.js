@@ -4,7 +4,7 @@ var trending = document.getElementById("trending");
 
 
 window.addEventListener( "load", displayTredning);
-
+trending.addEventListener( "click", displayTredning);
 
 function displayTredning(){
     fetch( './articles.json' )
@@ -19,7 +19,7 @@ function displayTredning(){
 
 function makeArticleCard( {author, heading, image, likes, time} ){
     var div = document.createElement("div")
-    div.className = "article"
+    div.className = "article";
     div.innerHTML = `
     <img src=${image} alt="" class="article-img">
 
@@ -48,7 +48,7 @@ video.addEventListener("click", fetchData);
 
 function fetchData(){
 
-    var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=latest%20movies%20trailer&key=AIzaSyB2M6fUG-_3ZmsVG3AzaZQCX7nz5MluBEw`;
+    var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=60&q=latest%20movies%20trailer&key=AIzaSyB2M6fUG-_3ZmsVG3AzaZQCX7nz5MluBEw`;
 
     fetch( url )
     .then( response => response.json() )
@@ -65,8 +65,14 @@ function displayVideo( arr ){
         var obj = arr[i];
         var id = obj.id.videoId;
         var title = obj.snippet.title;
-        var thumbnail = obj.snippet.thumbnails.high.url;
         console.log( obj );
+        var thumbnail;
+        if( i % 2 == 0 ){
+            thumbnail = "https://secure.gravatar.com/avatar/91d9647d48311247adced62f7e9fdbbb?s=96&d=mm&r=g";
+        }
+        else{
+            thumbnail = "https://secure.gravatar.com/avatar/0081c64428025cafd4ef5f2cc54cf47c?s=96&d=mm&r=g";
+        }
         createCard( id, title, thumbnail );
     }
 
@@ -78,7 +84,7 @@ function createCard( id, title, thumbnail ){
     div.id = "video";
 
     var videoCard = document.createElement("iframe");
-    videoCard.src = `https://www.youtube.com/embed/${id}?&autoplay=1`;
+    videoCard.src = `https://www.youtube.com/embed/${id}`;
     videoCard.height = "242px";
     videoCard.width = "431px";
     videoCard.style.borderRadius = "10px";
@@ -90,6 +96,7 @@ function createCard( id, title, thumbnail ){
 
     var div1 = document.createElement("div");
     div1.innerHTML = `<div class="article">
+
 
     <div class="flex-1">
         <p class="article-heading">
