@@ -102,14 +102,14 @@ function createCard( id, title, thumbnail ){
         <p class="article-heading">
             ${title}
         </p>
-        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+        <i class="fa fa-bookmark-o fa-lg" aria-hidden="true"></i>
     </div>
 
     <div class="flex-2">
         <img src=${thumbnail} alt="" class="author">
         <p>55 min ago</p>
-        <i class="fa fa-heart-o" aria-hidden="true"><p>1</p></i>
-        <i class="fa fa-share-alt" aria-hidden="true"></i>
+        <i class="fa fa-heart-o fa-lg" aria-hidden="true"><p>1</p></i>
+        <i class="fa fa-share-alt fa-lg" aria-hidden="true"></i>
     </div>
 
     </div>`;
