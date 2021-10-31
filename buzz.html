@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        #buzz {
+            border: 1px solid rgb(230, 45, 45);
+            display: flex;
+            position: relative;
+        }
+        #main {
+            width: 431px;
+            margin-right: 20px;
+        }
+        #side {
+            width: 220px;
+            font-size: 14px;
+            border: 1px solid black;
+            border-radius: 4px;
+            height: 540px;
+            position: fixed;
+            right: 10px;
+        }
+        .icons, #story-div {
+            display: flex;
+        }
+        .icons i {
+            flex-grow: 1;
+        }
+        .box {
+            border-bottom: 1px solid rgb(214, 209, 209);
+            padding: 12px;
+            padding-bottom: 10px;
+        }
+        .head {
+            font-size: 16px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        .category {
+            padding: 8px 0px;
+            border-bottom: 1px solid rgb(235, 230, 230);
+        }
+        .app-store {
+            height: 40px;
+            width: 130px;
+        }
+        .story-img {
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            padding: 2px;
+            border: 2px solid #f84464;
+        }
+        .story-text {
+            font-size: 11px;
+            padding-bottom: 10px;
+        }
+        #story-div{
+            display: flex;
+        }
+        .stories {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .btn {
+            padding: 3px 10px;
+            margin: 2px;
+            border-radius: 22px;
+            border: none;
+            outline: none;
+            font-size: 12px;
+            color: rgb(102, 100, 100);
+            border: 1px solid rgb(102, 100, 100);
+        }
+        .btn:hover {
+            background-color: #f84464;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        #button {
+            padding: 10px 0px;
+            border-top: 1px solid rgb(214, 212, 212);
+            border-bottom: 1px solid rgb(214, 212, 212);
+        }
+        
+        .article-img {
+            height: 104px;
+            width: 104px;
+            border-radius: 10px;
+            float: left;
+        }
+        .article-heading {
+            font-size: 18px;
+        }
+        .flex-1 {
+            display: flex;
+            padding-left: 10px;
+        }
+        .author {
+            height: 28px;
+            border-radius: 50%;
+        }
+        .flex-2 {
+            display: flex;
+            padding-left: 10px;
+            margin-top: 16px;
+        }
+        .flex-2 p {
+            flex-grow: 1;
+            font-size: 14px;
+            color: rgb(100, 98, 98);
+        }
+        .flex-2 i, .flex-2 p {
+            display: inline-block;
+            padding-left: 6px;
+        }
+        .article {
+            margin: 20px 0px;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <dis id="buzz">
+
+        <div id="main">
+    
+            <div id="story-div">
+    
+                <div class="stories">
+                    <img class="story-img" src="https://in.bmscdn.com/content-buzz/2021/10/rons-gone-wrong-thumb.jpeg" alt="Ron's gone wrong">
+                    <p class="story-text">Movie Releases</p>
+                </div>
+        
+                <div class="stories">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/07/upcomingprimevideo.jpg" alt="" class="story-img">
+                    <p class="story-text">Prime movies</p>
+                </div>
+        
+                <div class="stories">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/07/upcomingnetflix.jpg" alt="" class="story-img">
+                    <p class="story-text">Netflix movies</p>
+                </div>
+        
+                <div class="stories">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/09/emily-in-paris-thumbnail.jpg" alt="" class="story-img">
+                    <p class="story-text">Web series</p>
+                </div>
+        
+                <div class="stories">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/09/satyameva-jayate-thumbnail.jpg" alt="" class="story-img">
+                    <p class="story-text">Bollywood Re...</p>
+                </div>
+        
+            </div>
+    
+            <div id="button">
+                <button class="btn" id="trending">Trending</button>
+                <button class="btn">Movies</button>
+                <button class="btn">Events</button>
+                <button class="btn">Sports</button>
+                <button class="btn">Streaming</button>
+                <button class="btn" id="video">Video</button>
+            </div>
+ 
+            <div id="articles">
+                
+                
+
+                <div class="article">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/10/rajkummar-rao-and-kriti-sanon-starrer-hum-do-hamare-do-to-release-on-october-29-on-disney-hotstar-322x322-1.jpg" alt="" class="article-img">
+
+                    <div class="flex-1">
+                        <p class="article-heading">
+                            ‘Hum Do Hamare Do’ Is The Kind Of Movie That Makes You Feel All Warm And Fuzzy
+                        </p>
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="flex-2">
+                        <img src="https://secure.gravatar.com/avatar/e27c85f334130ffb84eae2b4e20a4e5d?s=96&d=mm&r=g" alt="" class="author">
+                        <p>55 min ago</p>
+                        <i class="fa fa-heart-o fa-lg" aria-hidden="true"><p>1</p></i>
+                        <i class="fa fa-share-alt fa-lg" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                
+
+                <div class="article">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/10/the-babadook-square.jpg" alt="" class="article-img">
+
+                    <div class="flex-1">
+                        <p class="article-heading">
+                            Have A Spooky Evening This Halloween With Our Scary Movie Guide
+                        </p>
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="flex-2">
+                        <img src="https://secure.gravatar.com/avatar/e27c85f334130ffb84eae2b4e20a4e5d?s=96&d=mm&r=g" alt="" class="author">
+                        <p>55 min ago</p>
+                        <i class="fa fa-heart-o" aria-hidden="true"><p>1</p></i>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+                <div class="article">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/10/the-babadook-square.jpg" alt="" class="article-img">
+
+                    <div class="flex-1">
+                        <p class="article-heading">
+                            Have A Spooky Evening This Halloween With Our Scary Movie Guide
+                        </p>
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="flex-2">
+                        <img src="https://secure.gravatar.com/avatar/e27c85f334130ffb84eae2b4e20a4e5d?s=96&d=mm&r=g" alt="" class="author">
+                        <p>55 min ago</p>
+                        <i class="fa fa-heart-o" aria-hidden="true"><p>1</p></i>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+
+                <div class="clear"></div>
+
+                
+                <div class="article">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/10/the-babadook-square.jpg" alt="" class="article-img">
+
+                    <div class="flex-1">
+                        <p class="article-heading">
+                            Have A Spooky Evening This Halloween With Our Scary Movie Guide
+                        </p>
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="flex-2">
+                        <img src="https://secure.gravatar.com/avatar/e27c85f334130ffb84eae2b4e20a4e5d?s=96&d=mm&r=g" alt="" class="author">
+                        <p>55 min ago</p>
+                        <i class="fa fa-heart-o" aria-hidden="true"><p>1</p></i>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="article">
+                    <img src="https://in.bmscdn.com/content-buzz/2021/10/the-babadook-square.jpg" alt="" class="article-img">
+
+                    <div class="flex-1">
+                        <p class="article-heading">
+                            Have A Spooky Evening This Halloween With Our Scary Movie Guide
+                        </p>
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="flex-2">
+                        <img src="https://secure.gravatar.com/avatar/e27c85f334130ffb84eae2b4e20a4e5d?s=96&d=mm&r=g" alt="" class="author">
+                        <p>55 min ago</p>
+                        <i class="fa fa-heart-o" aria-hidden="true"><p>1</p></i>
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="side">
+    
+            <div class="header box">
+                <div class="head">BookMyShow Buzz</div>
+                <p>Get the latest updates on movies, series, online events to stream and move with curated recommendations.</p>
+            </div>
+    
+            <div class="categories box">
+                <div class="head">Popular categories</div>
+                <p class="category">Movies</p>
+                <p class="category">Events</p>
+                <p class="category">City Guide</p>
+                <p class="category">Sports</p>
+                <p class="category">Streaming</p>
+                <p>Music</p>
+            </div>
+            
+            <div class="images box">
+                <div class="head">Get the app experience</div>
+                <img class="app-store" src="https://in.bmscdn.com/webin/common/google-play-badge.jpg" alt="play-store">
+                <img class="app-store" src="https://in.bmscdn.com/static/2020/05/app-store-badge-1.jpg" alt="apple-store">
+            </div>
+    
+            <div class="icons box">
+                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+            </div>
+    
+        </div>
+    
+    </div>
+    <script src="./buzz.js"></script>
+    <script src="./articles.json"></script>
+</body>
+</html>

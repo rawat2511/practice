@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: white;
+        }
+        #signup img {
+            height: 20px;
+            width: 20px;
+            float: left;
+        }
+        
+
+        #signup {
+            padding: 26px 20px;
+            width: 400px;
+            border: 1px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            background-color: white;
+        }
+        .social {
+            width: 300px;
+            padding: 10px 20px;
+            margin: 16px auto;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #or {
+            border: none;
+            cursor: auto;
+        }
+        #flag {
+            border: none;
+            padding: 0px;
+            width: 340px;
+            padding: 10px 0px;
+            margin: auto;
+        }
+        #flag img {
+            height: 14px;
+            margin-top: 3px;
+            margin-right: 4px;
+        }
+        #phone {
+            width: 82%;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            padding-bottom: 8px;
+        }
+        span {
+            text-decoration: underline;
+        }
+        #privacy {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-top: 80px;
+            font-size: 12px;
+            display: none;
+        }
+        .head {
+            text-align: center;
+            padding-bottom: 26px;
+        }
+        #cross {
+            position: absolute;
+            top: 14px;
+            right: 34px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        body {
+            background: rgba(0, 0, 0, 0.616) ;
+        }
+        #continue {
+            background-color: #f84464;
+            color: white;
+            width: 300px;
+            padding: 10px 20px;
+            text-align: center;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 80px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="signup">
+        <div class="head">
+            Get Started 
+            <button id="cross">x</button>
+        </div>
+        <div class="social" id="fb">
+            <img src="https://cdn1.iconfinder.com/data/icons/social-media-set-for-free/32/facebook-512.png" alt="fb-login">
+            Continue with Facebook
+        </div>
+        <div class="social" id="google">
+            <img src="https://images.theconversation.com/files/93616/original/image-20150902-6700-t2axrz.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip" alt="google-login">
+            Continue with Google
+        </div>
+        <div class="social" id="mail">
+            <img src="https://clipartart.com/images/clipart-email-6.jpg" alt="mail-login">
+            Continue with Email
+        </div>
+        <p class="social" id="or">OR</p>
+        <div id="flag">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="flag">
+            +91 
+            <input type="text" name="phone" id="phone" maxlength="10" placeholder="Continue with mobile number" pattern="[0-9]{10}" title="You can enter only 10 digits..." />
+        </div>
+        <div id="privacy">I agree to the <span>Terms & Conditions</span> and <span>Privacy Policy</span></div>
+        <div id="continue">Continue</div>
+    </div>
+
+
+</body>
+</html>
